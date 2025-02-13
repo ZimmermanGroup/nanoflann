@@ -15,7 +15,10 @@ channels = [
   "https://prefix.dev/conda-forge",
 ]
 
-[tasks]
+[tasks.vec-of-vec-example]
+description = "Test the vector of vectors example"
+cwd = ".pixi/build-v0/nanoflann-o42p_Pgz030/bld/rattler-build_nanoflann/build/bin/"
+cmd = "./vector_of_vectors_example"
 
 [dependencies]
 nanoflann = {path = "."}
